@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 250px;
       padding: 20px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
     .header {
       text-align: center;
@@ -15,10 +15,11 @@
     }
     .header img {
       display: block;
+      width: 32px;
+      height: 32px;
       margin: 0 auto 8px;
     }
     .header h1 {
-      margin: 0;
       font-size: 18px;
       color: #333;
     }
@@ -49,27 +50,24 @@
     .slider {
       position: absolute;
       cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: .4s;
+      inset: 0;
+      background: #ccc;
       border-radius: 26px;
+      transition: .4s;
     }
     .slider:before {
-      position: absolute;
       content: "";
+      position: absolute;
       height: 20px;
       width: 20px;
       left: 3px;
       bottom: 3px;
-      background-color: white;
-      transition: .4s;
+      background: white;
       border-radius: 50%;
+      transition: .4s;
     }
     input:checked + .slider {
-      background-color: #2196F3;
+      background: #2196F3;
     }
     input:checked + .slider:before {
       transform: translateX(24px);
@@ -84,8 +82,8 @@
 </head>
 <body>
   <div class="header">
-    <img src="icon_48.png" alt="Cloud Icon" style="width: 32px; height: 32px; margin-bottom: 8px;">
-    <h1>The Dark Mode</h1>
+    <img src="icon_48.png" alt="Icon">
+    <h1>Dark Inverter</h1>
   </div>
   <div class="toggle-container">
     <span class="toggle-label">Dark Theme</span>

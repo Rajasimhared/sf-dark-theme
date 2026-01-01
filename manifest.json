@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "The Dark Mode",
+  "name": "Dark Inverter",
   "version": "1.0.0",
-  "description": "Apply dark theme to web pages with toggle control",
+  "description": "Toggle dark mode on any website with smooth, eye-friendly color inversion",
+  "author": "Rajasimha Reddy",
   "permissions": [
     "storage",
     "activeTab"
@@ -21,6 +22,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
+    "default_title": "Toggle Dark Mode",
     "default_icon": {
       "16": "icon_16.png",
       "32": "icon_32.png",

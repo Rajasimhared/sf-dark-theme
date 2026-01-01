@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Salesforce Dark Theme",
+  "name": "The Dark Mode",
   "version": "1.0.0",
-  "description": "Apply dark theme to Salesforce pages with toggle control",
+  "description": "Apply dark theme to web pages with toggle control",
   "permissions": [
     "storage",
     "activeTab"
@@ -15,19 +15,22 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["dark-theme.css"],
-      "run_at": "document_start"
+      "run_at": "document_start",
+      "all_frames": true
     }
   ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icon_16.png",
+      "32": "icon_32.png",
       "48": "icon_48.png",
       "128": "icon_128.png"
     }
   },
   "icons": {
     "16": "icon_16.png",
+    "32": "icon_32.png",
     "48": "icon_48.png",
     "128": "icon_128.png"
   }

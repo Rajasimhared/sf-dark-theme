@@ -1,6 +1,6 @@
-# Salesforce Dark Theme Chrome Extension
+# The Dark Mode Chrome Extension
 
-A Chrome extension that applies a dark theme to Salesforce pages with a toggle button.
+A Chrome extension that applies a dark theme to web pages with a toggle button.
 
 ## Installation
 
@@ -19,5 +19,5 @@ Click the extension icon in your Chrome toolbar and toggle the dark theme on/off
 - Dark theme for Salesforce UI
 - Toggle button to enable/disable
 - Persistent settings
-- Works on all Salesforce pages including loading screens
+- Works on all web pages including loading screens
 

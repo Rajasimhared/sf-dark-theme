@@ -1,0 +1,43 @@
+/* Softer dark theme - easier on the eyes */
+html {
+  filter: invert(0.92) hue-rotate(180deg) brightness(0.95) contrast(0.9) saturate(0.9) !important;
+  background: #1a1a1a !important;
+}
+
+/* Re-invert images, videos, and icons so they look normal */
+img,
+video,
+svg,
+canvas {
+  filter: invert(0.92) hue-rotate(180deg) brightness(1.05) contrast(1.05) !important;
+}
+
+/* Fix Lightning icons */
+.slds-icon {
+  filter: invert(0.92) hue-rotate(180deg) brightness(1.05) !important;
+}
+
+/* Target Salesforce loading screens and spinners */
+.slds-spinner,
+.slds-spinner_container,
+.oneLoading,
+.loading,
+[class*="loading"],
+[id*="loading"] {
+  filter: invert(0.92) hue-rotate(180deg) brightness(1.05) !important;
+}
+
+/* Softer background */
+body {
+  background-color: #1a1a1a !important;
+}
+
+/* Reduce harsh text contrast */
+body, p, span, div, a {
+  text-shadow: none !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, filter 0.2s ease !important;
+}
